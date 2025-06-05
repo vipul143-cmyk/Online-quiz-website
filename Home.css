@@ -1,0 +1,236 @@
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background: #4c68d7;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4c68d7, #6f86d6);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: white;
+    color: #4c68d7;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #eee;
+}
+
+/* Sections */
+.guidance, .instruction, .subjects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.guidance h2, .instruction h2, .subjects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4c68d7;
+}
+
+.guidance ul, .instruction ul {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Subject Buttons */
+.subject-list {
+    display: flex;
+    flex-wrap: nowrap; /* No wrap for a single line */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.subject-list a {
+    background: #4c68d7;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px; /* Equal width for all buttons */
+    height: 50px; /* Fixed height for uniformity */
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.subject-list a:hover {
+    background: #3b55c4;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-section {
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+    background-color: #333;
+}
+
+.footer-section .contact p,
+.footer-section .contact a {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-section .contact a {
+    text-decoration: none;
+}
+
+.footer-section .contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    color: #aaa;
+    background: #111;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .subject-list {
+        flex-wrap: wrap; /* Allow wrap on small screens */
+        gap: 15px;
+    }
+
+    .subject-list a {
+        flex: 1 1 45%;
+        min-width: auto;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .footer-section ul li a {
+        width: 100%;
+    }
+}

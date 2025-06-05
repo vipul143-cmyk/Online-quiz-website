@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="Contact.css" />
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">Let's Quizz</div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Get in Touch</h2>
+    <p class="sub-heading">We would love to hear from you!</p>
+    <hr />
+    
+    <form action="contact.php" method="POST">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" name="full_name" required />
+        <input type="email" placeholder="Email Address" name="email" required />
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Mobile Number" name="mobile_number" required />
+        <input type="text" placeholder="Email Subject" name="email_subject" required />
+      </div>
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Let's Quizz by Vipul Kr. Sahani</p>
+  </footer>
+</body>
+</html>

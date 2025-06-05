@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Bars */
+nav{
+    background: #4c68d7;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 90px;
+    font-weight: bold;
+}
+/* nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 1vh 2vh;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: #1b9bff;
+    transition: .5s;
+} */
+
+/* Pick the interested sub-subject */
+div.subject{
+    /* margin: 10vh 7vh; */
+    display: flex;
+    flex-wrap: wrap;
+} 
+div#subjects{
+    margin: 10vh 0vh 0vh 7vh;
+    font-size: 5vh;
+}
+div#algebra{
+    margin: 5vh 0vh 0vh 7vh;
+    height: 350px;
+    width: 300px;
+    /* border: 2px solid black; */
+    background-image: url(Algebra.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    box-shadow: 0 4px 8px 0 rgba(7, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 0, 0, 0.19);
+}
+div#algebra p{
+    font-size: 5vh;
+    color:black;
+    position: relative;
+    top: 300px; 
+    left: 85px;
+}
+div#trigonometry{
+    margin: 5vh 0vh 0vh 7vh;
+    height: 350px;
+    width: 300px;
+    /* border: 2px solid black; */
+    background-image: url(Trigonometry.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    box-shadow: 0 4px 8px 0 rgba(7, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 0, 0, 0.19);
+}
+div#trigonometry p{
+    font-size: 5vh;
+    color:black;
+    position: relative;
+    top: 300px; 
+    left: 45px;
+}
+div#arithmetic{
+    margin: 5vh 0vh 0vh 7vh;
+    height: 350px;
+    width: 300px;
+    /* border: 2px solid black; */
+    background-image: url(Arithmetic.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    box-shadow: 0 4px 8px 0 rgba(7, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 0, 0, 0.19);
+}
+div#arithmetic p{
+    font-size: 5vh;
+    color:black;
+    position: relative;
+    top: 300px; 
+    left: 60px;
+}
+
+/* Footer Part */
+.footer {
+    background-color: #4c68d7;
+    margin: 10vh 0 0 0;
+    padding: 5vh 3vh 10vh 3vh;  /* ⬅️ bottom me 10vh padding add ki */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.logo{
+    margin: 10vh;
+}
+p#heading{
+    color: white;
+    font-size: 40px;
+    line-height: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+p#content{
+    padding: 10px 10px;
+    color: white;
+    /* position: absolute;
+    top: 2px;
+    left: 2px; */
+}
+section.Quick_Links p{
+    font-size: 5vh;
+    color: white;
+    margin: 5vh 20vh 3vh 0vh;
+}
+section.Quick_Links li a{
+    color: white;
+    font-size: 3vh;
+    margin: 5vh 25vh 3vh 0vh;
+    padding: 1vh 0vh;
+}
+section.Quick_Links ul li a:hover{
+    color: #4c68d7;
+    transition: .5s;
+}
+section.Subject_Links p{
+    font-size: 5vh;
+    color: white;
+    margin: 5vh 25vh 3vh 0vh;
+}
+section.Subject_Links li a{
+    color: white;
+    font-size: 3vh;
+    margin: 1vh 25vh 0vh 0vh;
+    padding: 1vh 0vh;
+}
+section.Subject_Links ul li a:hover{
+    color: #4c68d7;
+    transition: .5s;
+}
+p#contact{
+    font-size: 5vh;
+    color: white;
+    margin: 4vh 0vh 0vh 0vh;
+}
+section.Contact_us p,pre{
+    color: white;
+    font-size: 3vh;
+    margin: 1vh 0vh -2vh 0vh;
+    padding: 1vh 0vh;
+}
+section.Subject_Links p:hover{
+    color: #4c68d7;
+    transition: .5s;
+}
+p#Copyright{
+    color: white;
+    border: 2px solid balck;
+    /* margin:5vh 90vh; */
+    padding: 3% 30%;
+    text-align: center;
+}

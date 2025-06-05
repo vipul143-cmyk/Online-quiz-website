@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Login_Page.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="left-box">
+      <div class="welcome-text">
+        <h2>Enhance<br>the Basic<br>Knowledge</h2>
+      </div>
+    </div>
+
+    <div class="login-box">
+      <img src="Avatar.png" class="avatar" alt="Avatar" />
+      <h1>Login Here</h1>
+      <!-- Changed form action to Loginpage.php and method to POST -->
+      <form action="Loginpage.php" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required />
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        
+        <input type="submit" value="Login" />
+        <p class="signup-link">Don't have an account? <a href="Register_Page.html">Register</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
